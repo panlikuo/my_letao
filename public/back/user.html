@@ -26,7 +26,7 @@
     <div class="nav">
       <ul>
         <li>
-          <a href="#" class="current">
+          <a href="user.html" class="current">
             <span class="glyphicon glyphicon-user"></span>
             <span>用户管理</span>
           </a>
@@ -37,12 +37,12 @@
             <span>分类管理</span>
           </a>
           <div class="child" style="display: none">
-            <a href="#">一级菜单</a>
-            <a href="#">二级菜单</a>
+            <a href="first.html">一级菜单</a>
+            <a href="second.html">二级菜单</a>
           </div>
         </li>
         <li>
-          <a href="#">
+          <a href="product.html">
             <span class="glyphicon glyphicon-tags"></span>
             <span>商品管理</span>
           </a>
@@ -64,10 +64,29 @@
         <!-- 面包屑导航, 路径导航 -->
         <ol class="breadcrumb mt_20">
           <li><a href="index.html">管理系统</a></li>
-          <li class="active">首页</li>
+          <li class="active">用户管理</li>
         </ol>
       </div>
   </div>
+
+  <!-- 退出模态框 -->
+  <div class="modal fade" tabindex="-1" id="Model">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">温馨提示</h4>
+          </div>
+          <div class="modal-body">
+            <p class="red"><span class="glyphicon glyphicon-info-sign">您确定要退出后台管理系统吗？</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="outBtn" >退出</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
   <!-- 引包 -->
   
