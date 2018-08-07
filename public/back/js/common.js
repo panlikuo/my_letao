@@ -53,3 +53,25 @@ $(function () {
     })
   })
 })
+
+// 9.登录拦截功能
+if (location.href.indexOf("login.html") === -1) {
+
+    // 发送ajax请求
+    $.ajax({
+      url : "/employee/checkRootLogin",
+      dataType : 'json',
+      type : 'get',
+      success : function (info){
+        // 返回结果为true代表登录过
+        console.log(info);
+        if (info.error == 400 ) {
+          // 未登录  跳转到登录页
+          location.href = "login.html"
+        }
+        
+      }
+    })
+    
+  
+}
