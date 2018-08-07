@@ -1,3 +1,23 @@
+/* a标签样式重置 */
+/* lvha */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+/* padding margin 和 li 的样式重置 */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.red {
+  color: #A94442;
+}
+
+/* 登录页 */
 .body_bg {
   background-color: #222D32;
 }
@@ -10,6 +30,114 @@
 .mt_150 {
   margin-top: 150px;
 }
+.mt_20 {
+  margin-top: 20px;
+}
+
+/* 侧边栏样式 */
+.lt_aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 180px;
+  background-color:#222D32;
+  /* 层级提高 */
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.menuhidden {
+ left: -180px;
+}
+/* 大标题 */
+.lt_aside .brand {
+  width: 180px;
+  height: 50px;
+  background-color: #337ab7;
+}
+.lt_aside .brand a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+/* 用户 */
+.lt_aside .user {
+  width: 180px;
+  height: 180px;
+  padding-top: 30px;
+}
+.lt_aside .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.lt_aside .user p {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* 导航栏 */
+.lt_aside .nav a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  color: #fff;
+}
+
+
+.lt_aside .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+.lt_aside .nav .child a {
+  padding-left: 60px;
+}
+
+/* main部分 */
+.lt_main {
+  height: 2000px;
+  background-color: skyblue;
+  padding-left: 180px;
+  padding-top: 50px;
+  transition: all 1s;
+}
+.lt_main.menuhidden {
+  padding-left: 0;
+}
+.lt_main .lt_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 180px;
+  height: 50px;
+  width: 100%;
+  background-color: #3C8DBC;
+  transition: all 1s;
+}
+.lt_top.menuhidden {
+  padding-left: 0;
+}
+.lt_main .lt_top .icon_menu,
+.lt_main .lt_top .icon_logout {
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   color: #fff;
+   font-size: 18px;
+}
+
 
 
 
