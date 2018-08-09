@@ -7,7 +7,6 @@ $(function () {
 
 
   render();
-
   function render() {
     $.ajax({
       type: "get",
