@@ -143,6 +143,11 @@ a:active {
   width: 48%;
   height: 400px;
 }
+.table.table-striped th,
+.table.table-striped td {
+  vertical-align: middle;
+  text-align: center;
+}
 
 
 
